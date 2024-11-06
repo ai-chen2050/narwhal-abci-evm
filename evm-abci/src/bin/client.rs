@@ -105,9 +105,9 @@ async fn send_transaction(host: &str, from: Address, to: Address, value: U256) -
 #[tokio::main]
 async fn main() -> Result<()> {
     // the ABCI port on the various narwhal primaries
-    let host_1 = "http://213.136.78.134:3002";
-    let host_2 = "http://213.136.78.134:3009";
-    let host_3 = "http://213.136.78.134:3016";
+    let host_1 = "http://127.0.0.1:3002";
+    let host_2 = "http://127.0.0.1:3009";
+    let host_3 = "http://127.0.0.1:3016";
 
     let value = ethers::utils::parse_units(1, 18)?;
 
